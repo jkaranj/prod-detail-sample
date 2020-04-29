@@ -1,0 +1,199 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+.cont{
+    display: grid;
+    /* grid-template-columns: 1fr ; */
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    grid-template-areas: 
+    "big"
+    "detail"
+    "cat"
+    "sprod";
+}
+.bpic{
+    grid-area: big;
+    display: flex;
+    /* background-color: aqua; */
+    height: 50vh;
+    text-align: center;
+    align-items: center;
+}
+.bpic img{
+    width: 70%;
+    margin: auto;
+}
+
+.pdetail{
+    grid-area: detail;
+    padding-left: 15%;
+    /* padding: 10%; */
+    /* background-color: blue; */
+    /* height: 50vh; */
+    font-size: 3rem;
+    
+}
+.pdetail .costdiv{
+    display: flex;
+}
+.pdetail button{
+    width: 20%;
+    padding: 5%;
+    height: 100%;
+    font-size: 2rem;
+    border: none;
+    /* background-color: rgb(171, 226, 98); */
+}
+.pdetail .small{
+    background-color: rgb(171, 226, 98);;
+}
+.quant button{
+    background: none;
+    border: none;
+    font-size: 5rem;
+}
+/* .pdetail .quant p{
+    display: flex;
+}
+.quant p{
+    font-size: 5rem;
+} */
+.quant input[type=number]{
+    background: none;
+    border: 1px solid rgba(49, 49, 49, 0.815);
+    border-radius: 2px;
+    width: 20%;
+    font-size: 4rem;
+    text-align: center;
+    /* padding-left: 2%; */
+}
+.checkout{
+    display: flex;
+}
+.checkout p{
+    padding: 2%;
+}
+
+.checkout button{
+    background-color: slateblue;
+    color: white;
+    width: 30%;
+    padding: 6%;
+    border: 1 solid slateblue;
+    /* border-radius: 30px; */
+}
+.categ{
+    padding: 5%;
+    padding-top: 20%;
+    position: relative;
+    grid-area: cat;
+    /* background-color: blueviolet; */
+    text-align: center;
+    align-items: center;
+    /* height: 50vh; */
+}
+.categ img{
+    width: 90%;
+    /* height: 100%; */
+}
+.categ h1{
+    position: absolute;
+    bottom: 10%;
+    font-size: 2rem;
+    color: white;
+    right: 0%;
+    padding: 4%;
+    padding-right: 15%;
+    margin-right: 15%;
+    background-color: rgba(49, 49, 49, 0.815);
+    font-family: sans-serif;
+}
+
+.oproduct{
+    padding: 5%;
+    grid-area: sprod;
+    /* height: 50vh; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    grid-template-areas: 
+    "p1 p2"
+    "p3 p4";
+}
+.p1{
+    position: relative;
+    grid-area: p1;
+    padding: 1%;
+}
+.p1 img{
+    width: 100%;
+}
+.p1 h3{
+    position: absolute;
+    bottom: 10%;
+    font-size: 1rem;
+    color: white;
+    /* right: 0%; */
+    padding: 3%;
+    padding-right: 5%;
+    background-color: rgba(49, 49, 49, 0.815);
+    font-family: sans-serif;
+}
+.p2{
+    position: relative;
+    grid-area: p2;
+    padding: 1%;
+}
+.p2 img{
+    width: 100%;
+}
+.p2 h3{
+    position: absolute;
+    bottom: 10%;
+    font-size: 1rem;
+    color: white;
+    /* right: 0%; */
+    padding: 3%;
+    padding-right: 5%;
+    background-color: rgba(49, 49, 49, 0.815);
+    font-family: sans-serif;
+}
+.p3{
+    position: relative;
+    grid-area: p3;
+    padding: 1%;
+}
+.p3 img{
+    width: 100%;
+}
+.p3 h3{
+    position: absolute;
+    bottom: 10%;
+    font-size: 1rem;
+    color: white;
+    /* right: 0%; */
+    padding: 3%;
+    padding-right: 5%;
+    background-color: rgba(49, 49, 49, 0.815);
+    font-family: sans-serif;
+}
+.p4{
+    position: relative;
+    grid-area: p4;
+    padding: 1%;
+}
+.p4 img{
+    width: 100%;
+}
+.p4 h3{
+    position: absolute;
+    bottom: 10%;
+    font-size: 1rem;
+    color: white;
+    /* right: 0%; */
+    padding: 3%;
+    padding-right: 5%;
+    background-color: rgba(49, 49, 49, 0.815);
+    font-family: sans-serif;
+}

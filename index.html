@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>assignment</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="desk.css">
+    </head>
+
+    <body>
+
+        <div class="cont">
+            
+            <div class="bpic">
+                <img src="dr1.jpg" alt="dorite-red-small" id="bigImage"> <!--cost ruppees 25 and b=50-->
+            </div>
+
+            <div class="pdetail">
+                <h1>Dorito nacho cheese</h1>
+                <div class="costdiv"><!--<i class="fas fa-rupee-sign"></i>--><h2>Rs. </h2><h2 id="price">25</h2></div>
+                <p>Pack size :</p>
+                <button class="small" id="smalll" onclick="smal()"> Small</button>
+                <button class="big" id="bigg" onclick="biggg()">Large</button>
+                <p>Quantity :</p>
+                <div class="quant">
+                    <!-- <p id="minus">-</p> -->
+                    <button class="minus" onclick="dec()">-</button>
+                    <input type="number" id="numberfield"  value="1">
+                    <button class="plus" onclick="inc()">+</button>
+                    <!-- <p id="plus">+</p> -->
+                </div>
+                <div class="checkout">
+                <button class="pay" onclick="payy()">Pay now</button>
+                <p> = </p>
+                <p class="tcost" id="ttlcost"></p>
+                </div>
+            </div>
+
+            <div class="categ">
+                <img src="dall.jpg">
+                <h1>Doritos</h1>
+            </div>
+
+            <div class="oproduct">
+                <div class="p1">
+                    <img src="db1.jpg">
+                    <h3>Cool</h3>
+                </div>
+                <div class="p2">
+                    <img src="dbk1.jpg">
+                    <h3>Sweet chilli</h3>
+                </div>
+                <div class="p3"><img src="dy1.jpg"><h3>Tangy cheese</h3></div>
+                <div class="p4"><img src="dv2.jpg"><h3>chilli</h3></div>
+            </div>
+
+        </div>
+
+        <script src="main.js"></script>
+
+    </body>
+</html>
